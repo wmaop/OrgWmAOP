@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">enableInterception</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">Ly8gcGlwZWxpbmUNCklEYXRhQ3Vyc29yIHBpcGVsaW5lQ3Vyc29yID0gcGlwZWxpbmUuZ2V0Q3Vy
+c29yKCk7DQoJU3RyaW5nCSRyZXNvdXJjZUlEID0gSURhdGFVdGlsLmdldFN0cmluZyggcGlwZWxp
+bmVDdXJzb3IsICJlbmFibGVkIiApOw0KcGlwZWxpbmVDdXJzb3IuZGVzdHJveSgpOw0KDQpib29s
+ZWFuIGVuYWJsZWQ7IA0KaWYgKCRyZXNvdXJjZUlEID09IG51bGwgfHwgJHJlc291cmNlSUQubGVu
+Z3RoKCkgPT0gMCkgew0KCWVuYWJsZWQgPSBBT1BDaGFpblByb2Nlc3Nvci5nZXRJbnN0YW5jZSgp
+LmlzRW5hYmxlZCgpOw0KfSBlbHNlIHsNCgllbmFibGVkID0gQm9vbGVhbi52YWx1ZU9mKCRyZXNv
+dXJjZUlEKTsNCglBT1BDaGFpblByb2Nlc3Nvci5nZXRJbnN0YW5jZSgpLnNldEVuYWJsZWQoZW5h
+YmxlZCk7DQp9DQoNCi8vIHBpcGVsaW5lDQpJRGF0YUN1cnNvciBwaXBlbGluZUN1cnNvcl8xID0g
+cGlwZWxpbmUuZ2V0Q3Vyc29yKCk7DQpJRGF0YVV0aWwucHV0KCBwaXBlbGluZUN1cnNvcl8xLCAi
+ZW5hYmxlZCIsIEJvb2xlYW4udG9TdHJpbmcoZW5hYmxlZCkgKTsNCnBpcGVsaW5lQ3Vyc29yXzEu
+ZGVzdHJveSgpOw0KCQ==</value>
+</Values>
