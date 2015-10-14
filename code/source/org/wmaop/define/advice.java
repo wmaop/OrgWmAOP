@@ -1,8 +1,8 @@
 package org.wmaop.define;
 
 // -----( IS Java Code Template v1.2
-// -----( CREATED: 2015-10-05 11:27:07 BST
-// -----( ON-HOST: WSII
+// -----( CREATED: 2015-10-07 10:00:00 BST
+// -----( ON-HOST: LDVDEVIN03.catlin.com
 
 import com.wm.data.*;
 import com.wm.util.Values;

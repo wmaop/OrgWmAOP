@@ -1,8 +1,8 @@
 package org.wmaop.define;
 
 // -----( IS Java Code Template v1.2
-// -----( CREATED: 2015-10-03 08:24:04 BST
-// -----( ON-HOST: WSII
+// -----( CREATED: 2015-10-07 09:58:37 BST
+// -----( ON-HOST: LDVDEVIN03.catlin.com
 
 import com.wm.data.*;
 import com.wm.util.Values;
@@ -35,9 +35,11 @@ public final class fixedResponse
 		// --- <<IS-START(registerFixedResponseMock)>> ---
 		// @sigtype java 3.5
 		// [i] field:0:required adviceId
+		// [i] field:0:required serviceName
+		// [i] field:0:optional condition
 		// [i] field:0:required interceptPoint {"BEFORE","INVOKE","AFTER"}
 		// [i] field:0:required response
-		new MockManager().registerFixedResponseMock(pipeline);			
+		new MockManager().registerFixedResponseMock(pipeline);		
 		// --- <<IS-END>> ---
 
                 
