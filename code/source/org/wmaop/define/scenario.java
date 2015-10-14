@@ -1,8 +1,8 @@
 package org.wmaop.define;
 
 // -----( IS Java Code Template v1.2
-// -----( CREATED: 2015-10-05 11:37:00 BST
-// -----( ON-HOST: WSII
+// -----( CREATED: 2015-10-06 14:46:12 BST
+// -----( ON-HOST: LDVDEVIN03.catlin.com
 
 import com.wm.data.*;
 import com.wm.util.Values;
@@ -10,15 +10,13 @@ import com.wm.app.b2b.server.Service;
 import com.wm.app.b2b.server.ServiceException;
 // --- <<IS-START-IMPORTS>> ---
 import java.io.ByteArrayInputStream;
-import java.io.IOException;
 import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.List;
-import javax.xml.bind.JAXBException;
 import org.wmaop.aop.Advice;
 import org.wmaop.aop.chainprocessor.AOPChainProcessor;
 import org.wmaop.interceptor.bdd.BddParser;
 import com.wm.data.IData;
+import com.wm.data.IDataCursor;
+import com.wm.data.IDataUtil;
 import com.wm.lang.xml.Document;
 import com.wm.lang.xml.WMDocumentException;
 // --- <<IS-END-IMPORTS>> ---
@@ -74,7 +72,7 @@ public final class scenario
 			AOPChainProcessor aop = AOPChainProcessor.getInstance();
 			aop.registerAdvice(advice);
 			aop.setEnabled(true);
-		} catch (JAXBException | IOException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 			throw new ServiceException("Error parsing scenario: " + e.getMessage());
 		}
