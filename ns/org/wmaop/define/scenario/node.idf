@@ -11,15 +11,13 @@
   </array>
   <array name="imports" type="value" depth="1">
     <value>java.io.ByteArrayInputStream</value>
-    <value>java.io.IOException</value>
     <value>java.io.InputStream</value>
-    <value>java.util.ArrayList</value>
-    <value>java.util.List</value>
-    <value>javax.xml.bind.JAXBException</value>
     <value>org.wmaop.aop.Advice</value>
     <value>org.wmaop.aop.chainprocessor.AOPChainProcessor</value>
     <value>org.wmaop.interceptor.bdd.BddParser</value>
     <value>com.wm.data.IData</value>
+    <value>com.wm.data.IDataCursor</value>
+    <value>com.wm.data.IDataUtil</value>
     <value>com.wm.lang.xml.Document</value>
     <value>com.wm.lang.xml.WMDocumentException</value>
   </array>

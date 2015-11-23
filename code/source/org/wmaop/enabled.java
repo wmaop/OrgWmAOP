@@ -1,8 +1,8 @@
 package org.wmaop;
 
 // -----( IS Java Code Template v1.2
-// -----( CREATED: 2015-10-05 10:25:56 BST
-// -----( ON-HOST: WSII
+// -----( CREATED: 2015-10-07 10:00:11 BST
+// -----( ON-HOST: LDVDEVIN03.catlin.com
 
 import com.wm.data.*;
 import com.wm.util.Values;
@@ -40,7 +40,7 @@ public final class enabled
 			String	$resourceID = IDataUtil.getString( pipelineCursor, "enabled" );
 		pipelineCursor.destroy();
 		
-		boolean enabled; 
+		boolean enabled;
 		if ($resourceID == null || $resourceID.length() == 0) {
 			enabled = AOPChainProcessor.getInstance().isEnabled();
 		} else {

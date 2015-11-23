@@ -1,8 +1,8 @@
 package org.wmaop.define;
 
 // -----( IS Java Code Template v1.2
-// -----( CREATED: 2015-10-12 16:13:19 BST
-// -----( ON-HOST: WSII
+// -----( CREATED: 2015-10-14 16:29:13 BST
+// -----( ON-HOST: LDVDEVIN03.catlin.com
 
 import com.wm.data.*;
 import com.wm.util.Values;
@@ -33,6 +33,11 @@ public final class exception
 	{
 		// --- <<IS-START(registerExceptionMock)>> ---
 		// @sigtype java 3.5
+		// [i] field:0:required adviceId
+		// [i] field:0:required serviceName
+		// [i] field:0:optional condition
+		// [i] field:0:required interceptPoint {"BEFORE","INVOKE","AFTER"}
+		// [i] field:0:required exception
 		new MockManager().registerException(pipeline);
 		// --- <<IS-END>> ---
 
