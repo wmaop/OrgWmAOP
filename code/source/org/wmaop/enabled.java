@@ -1,8 +1,8 @@
 package org.wmaop;
 
 // -----( IS Java Code Template v1.2
-// -----( CREATED: 2015-10-07 10:00:11 BST
-// -----( ON-HOST: LDVDEVIN03.catlin.com
+// -----( CREATED: 2015-12-21 15:04:07 GMT
+// -----( ON-HOST: WSII
 
 import com.wm.data.*;
 import com.wm.util.Values;
@@ -10,6 +10,7 @@ import com.wm.app.b2b.server.Service;
 import com.wm.app.b2b.server.ServiceException;
 // --- <<IS-START-IMPORTS>> ---
 import org.wmaop.aop.chainprocessor.AOPChainProcessor;
+import org.wmaop.flow.MockManager;
 // --- <<IS-END-IMPORTS>> ---
 
 public final class enabled
@@ -35,24 +36,7 @@ public final class enabled
 		// @sigtype java 3.5
 		// [i] field:0:required enabled
 		// [o] field:0:required enabled
-		// pipeline
-		IDataCursor pipelineCursor = pipeline.getCursor();
-			String	$resourceID = IDataUtil.getString( pipelineCursor, "enabled" );
-		pipelineCursor.destroy();
-		
-		boolean enabled;
-		if ($resourceID == null || $resourceID.length() == 0) {
-			enabled = AOPChainProcessor.getInstance().isEnabled();
-		} else {
-			enabled = Boolean.valueOf($resourceID);
-			AOPChainProcessor.getInstance().setEnabled(enabled);
-		}
-		
-		// pipeline
-		IDataCursor pipelineCursor_1 = pipeline.getCursor();
-		IDataUtil.put( pipelineCursor_1, "enabled", Boolean.toString(enabled) );
-		pipelineCursor_1.destroy();
-			
+		new MockManager().enableInterception(pipeline);
 		// --- <<IS-END>> ---
 
                 

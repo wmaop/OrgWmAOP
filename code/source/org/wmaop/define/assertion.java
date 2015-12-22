@@ -1,8 +1,8 @@
 package org.wmaop.define;
 
 // -----( IS Java Code Template v1.2
-// -----( CREATED: 2015-10-06 09:21:06 BST
-// -----( ON-HOST: Yoga.sysgen.co.uk
+// -----( CREATED: 2015-12-21 14:34:55 GMT
+// -----( ON-HOST: WSII
 
 import com.wm.data.*;
 import com.wm.util.Values;
@@ -33,8 +33,7 @@ public final class assertion
 	{
 		// --- <<IS-START(getInvokeCount)>> ---
 		// @sigtype java 3.5
-		new MockManager().getInvokeCount(pipeline);
-		
+		new MockManager().getInvokeCount(pipeline);		
 			
 		// --- <<IS-END>> ---
 
@@ -48,6 +47,10 @@ public final class assertion
 	{
 		// --- <<IS-START(registerAssertion)>> ---
 		// @sigtype java 3.5
+		// [i] field:0:required adviceId
+		// [i] field:0:required serviceName
+		// [i] field:0:optional condition
+		// [i] field:0:required interceptPoint {"BEFORE","INVOKE","AFTER"}
 		new MockManager().registerAssertion(pipeline);
 			
 		// --- <<IS-END>> ---

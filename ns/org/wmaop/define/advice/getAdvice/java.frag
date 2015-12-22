@@ -3,13 +3,5 @@
 <Values version="2.0">
   <value name="name">getAdvice</value>
   <value name="encodeutf8">true</value>
-  <value name="body">SURhdGFDdXJzb3IgcGlwZWxpbmVDdXJzb3IgPSBwaXBlbGluZS5nZXRDdXJzb3IoKTsNCglTdHJp
-bmcJYWR2aWNlSWQgPSBJRGF0YVV0aWwuZ2V0U3RyaW5nKCBwaXBlbGluZUN1cnNvciwgImlkIiAp
-Ow0KDQpMaXN0PEFkdmljZT4gYWR2czsNCmlmIChhZHZpY2VJZCA9PSBudWxsIHx8IGFkdmljZUlk
-Lmxlbmd0aCgpID09IDApIHsNCglhZHZzID0gQU9QQ2hhaW5Qcm9jZXNzb3IuZ2V0SW5zdGFuY2Uo
-KS5saXN0QWR2aWNlKCk7DQp9IGVsc2Ugew0KCWFkdnMgPSBuZXcgQXJyYXlMaXN0PEFkdmljZT4o
-KTsNCglhZHZzLmFkZChBT1BDaGFpblByb2Nlc3Nvci5nZXRJbnN0YW5jZSgpLmdldEFkdmljZShh
-ZHZpY2VJZCkpOw0KfQ0KDQovLyB0byBkb2N1bWVudCBhbmQgc2V0IGludG8gcGlwZWxpbmUNCklE
-YXRhVXRpbC5wdXQocGlwZWxpbmVDdXJzb3IsICJhZHZpY2VzIiwgYWR2cy5zaXplKCkpOw0KcGlw
-ZWxpbmVDdXJzb3IuZGVzdHJveSgpOw0KCQ==</value>
+  <value name="body">bmV3IE1vY2tNYW5hZ2VyKCkuZ2V0QWR2aWNlKHBpcGVsaW5lKTs=</value>
 </Values>

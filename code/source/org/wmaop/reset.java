@@ -1,8 +1,8 @@
 package org.wmaop;
 
 // -----( IS Java Code Template v1.2
-// -----( CREATED: 2015-10-06 15:55:16 BST
-// -----( ON-HOST: LDVDEVIN03.catlin.com
+// -----( CREATED: 2015-12-21 14:35:38 GMT
+// -----( ON-HOST: WSII
 
 import com.wm.data.*;
 import com.wm.util.Values;
@@ -10,6 +10,7 @@ import com.wm.app.b2b.server.Service;
 import com.wm.app.b2b.server.ServiceException;
 // --- <<IS-START-IMPORTS>> ---
 import org.wmaop.aop.chainprocessor.AOPChainProcessor;
+import org.wmaop.flow.MockManager;
 // --- <<IS-END-IMPORTS>> ---
 
 public final class reset
@@ -33,8 +34,7 @@ public final class reset
 	{
 		// --- <<IS-START(resetAdviceAndDisable)>> ---
 		// @sigtype java 3.5
-		AOPChainProcessor.getInstance().setEnabled(false);
-		AOPChainProcessor.getInstance().clearAdvice();
+		new MockManager().reset();
 			
 		// --- <<IS-END>> ---
 
