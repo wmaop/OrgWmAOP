@@ -10,13 +10,7 @@
   <array name="implements" type="value" depth="1">
   </array>
   <array name="imports" type="value" depth="1">
-    <value>java.util.ArrayList</value>
-    <value>java.util.List</value>
-    <value>org.wmaop.aop.advice.Advice</value>
-    <value>org.wmaop.aop.chainprocessor.AOPChainProcessor</value>
     <value>org.wmaop.flow.MockManager</value>
     <value>com.wm.data.IData</value>
-    <value>com.wm.data.IDataCursor</value>
-    <value>com.wm.data.IDataUtil</value>
   </array>
 </Values>

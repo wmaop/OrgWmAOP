@@ -4,7 +4,7 @@
 
   <!-- nodes -->
 
-<INVOKE TIMEOUT="" SERVICE="org.wmaop.define.assertion:registerAssertion" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+<INVOKE TIMEOUT="" SERVICE="org.wmaop.define.fixedResponse:registerFixedResponseMock" VALIDATE-IN="$none" VALIDATE-OUT="$none">
   <COMMENT></COMMENT>
 </INVOKE>
 </FLOW>

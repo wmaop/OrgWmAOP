@@ -1,22 +1,16 @@
 package org.wmaop.define;
 
 // -----( IS Java Code Template v1.2
-// -----( CREATED: 2015-12-21 14:53:04 GMT
-// -----( ON-HOST: WSII
+// -----( CREATED: 2016-05-03 08:44:06 BST
+// -----( ON-HOST: Yoga.sysgen.co.uk
 
 import com.wm.data.*;
 import com.wm.util.Values;
 import com.wm.app.b2b.server.Service;
 import com.wm.app.b2b.server.ServiceException;
 // --- <<IS-START-IMPORTS>> ---
-import java.util.ArrayList;
-import java.util.List;
-import org.wmaop.aop.advice.Advice;
-import org.wmaop.aop.chainprocessor.AOPChainProcessor;
 import org.wmaop.flow.MockManager;
 import com.wm.data.IData;
-import com.wm.data.IDataCursor;
-import com.wm.data.IDataUtil;
 // --- <<IS-END-IMPORTS>> ---
 
 public final class advice

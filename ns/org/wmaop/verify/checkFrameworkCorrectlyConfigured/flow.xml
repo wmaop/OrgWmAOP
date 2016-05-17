@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <FLOW VERSION="3.0" CLEANUP="true">
+  <COMMENT></COMMENT>
 
   <!-- nodes -->
 
@@ -323,7 +324,7 @@
 <Values version="2.0">
   <value name="xml">&lt;IDataXMLCoder version="1.0"&gt;
     &lt;record javaclass="com.wm.data.ISMemDataImpl"&gt;
-        &lt;value name="status"&gt;Mocking framwork operational&lt;/value&gt;
+        &lt;value name="status"&gt;Mocking framework operational&lt;/value&gt;
     &lt;/record&gt;
 &lt;/IDataXMLCoder&gt;</value>
   <record name="type" javaclass="com.wm.util.Values">
