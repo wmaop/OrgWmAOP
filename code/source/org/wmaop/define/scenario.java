@@ -1,8 +1,8 @@
 package org.wmaop.define;
 
 // -----( IS Java Code Template v1.2
-// -----( CREATED: 2015-12-21 14:52:58 GMT
-// -----( ON-HOST: WSII
+// -----( CREATED: 2016-05-24 15:19:44 BST
+// -----( ON-HOST: Yoga.sysgen.co.uk
 
 import com.wm.data.*;
 import com.wm.util.Values;
@@ -12,7 +12,6 @@ import com.wm.app.b2b.server.ServiceException;
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import org.wmaop.aop.advice.Advice;
-import org.wmaop.aop.chainprocessor.AOPChainProcessor;
 import org.wmaop.flow.ScenarioManager;
 import org.wmaop.interceptor.bdd.BddParser;
 import org.wmaop.interceptor.bdd.ParsedScenario;

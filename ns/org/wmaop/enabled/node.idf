@@ -10,7 +10,6 @@
   <array name="implements" type="value" depth="1">
   </array>
   <array name="imports" type="value" depth="1">
-    <value>org.wmaop.aop.chainprocessor.AOPChainProcessor</value>
     <value>org.wmaop.flow.MockManager</value>
   </array>
 </Values>

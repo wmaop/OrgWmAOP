@@ -1,15 +1,15 @@
 package org.wmaop;
 
 // -----( IS Java Code Template v1.2
-// -----( CREATED: 2016-01-04 14:48:24 GMT
-// -----( ON-HOST: WSII
+// -----( CREATED: 2016-05-24 15:19:23 BST
+// -----( ON-HOST: Yoga.sysgen.co.uk
 
 import com.wm.data.*;
 import com.wm.util.Values;
 import com.wm.app.b2b.server.Service;
 import com.wm.app.b2b.server.ServiceException;
 // --- <<IS-START-IMPORTS>> ---
-import org.wmaop.aop.chainprocessor.AOPChainProcessor;
+import org.wmaop.chainprocessor.AOPChainProcessor;
 import org.wmaop.flow.MockManager;
 // --- <<IS-END-IMPORTS>> ---
 

@@ -13,7 +13,6 @@
     <value>java.io.ByteArrayInputStream</value>
     <value>java.io.InputStream</value>
     <value>org.wmaop.aop.advice.Advice</value>
-    <value>org.wmaop.aop.chainprocessor.AOPChainProcessor</value>
     <value>org.wmaop.flow.ScenarioManager</value>
     <value>org.wmaop.interceptor.bdd.BddParser</value>
     <value>org.wmaop.interceptor.bdd.ParsedScenario</value>
