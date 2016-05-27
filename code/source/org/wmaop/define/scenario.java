@@ -1,8 +1,8 @@
 package org.wmaop.define;
 
 // -----( IS Java Code Template v1.2
-// -----( CREATED: 2016-05-24 15:19:44 BST
-// -----( ON-HOST: Yoga.sysgen.co.uk
+// -----( CREATED: 2016-05-27 08:28:13 BST
+// -----( ON-HOST: WSII
 
 import com.wm.data.*;
 import com.wm.util.Values;

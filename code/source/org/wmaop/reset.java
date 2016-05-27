@@ -1,8 +1,8 @@
 package org.wmaop;
 
 // -----( IS Java Code Template v1.2
-// -----( CREATED: 2016-05-24 15:19:23 BST
-// -----( ON-HOST: Yoga.sysgen.co.uk
+// -----( CREATED: 2016-05-27 08:24:48 BST
+// -----( ON-HOST: WSII
 
 import com.wm.data.*;
 import com.wm.util.Values;
@@ -34,7 +34,7 @@ public final class reset
 	{
 		// --- <<IS-START(resetAdviceAndDisable)>> ---
 		// @sigtype java 3.5
-		AOPChainProcessor.getInstance().reset();			
+		AOPChainProcessor.getInstance().reset();
 		// --- <<IS-END>> ---
 
                 
