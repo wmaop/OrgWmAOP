@@ -1,7 +1,7 @@
 package org.wmaop;
 
 // -----( IS Java Code Template v1.2
-// -----( CREATED: 2016-05-27 08:24:48 BST
+// -----( CREATED: 2016-05-29 11:12:46 BST
 // -----( ON-HOST: WSII
 
 import com.wm.data.*;
@@ -34,7 +34,7 @@ public final class reset
 	{
 		// --- <<IS-START(resetAdviceAndDisable)>> ---
 		// @sigtype java 3.5
-		AOPChainProcessor.getInstance().reset();
+		new MockManager().reset();
 		// --- <<IS-END>> ---
 
                 
