@@ -1,0 +1,134 @@
+package org.wmaop.util;
+
+// -----( IS Java Code Template v1.2
+// -----( CREATED: 2016-06-01 20:55:12 BST
+// -----( ON-HOST: WSII
+
+import com.wm.data.*;
+import com.wm.util.Values;
+import com.wm.app.b2b.server.Service;
+import com.wm.app.b2b.server.ServiceException;
+// --- <<IS-START-IMPORTS>> ---
+import com.wm.app.b2b.server.ns.Namespace;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import com.wm.lang.xml.Document;
+import com.wm.util.coder.IDataXMLCoder;
+import com.wm.util.coder.XMLCoderWrapper;
+// --- <<IS-END-IMPORTS>> ---
+
+public final class flow
+
+{
+	// ---( internal utility methods )---
+
+	final static flow _instance = new flow();
+
+	static flow _newInstance() { return new flow(); }
+
+	static flow _cast(Object o) { return (flow)o; }
+
+	// ---( server methods )---
+
+
+
+
+	public static final void invoke (IData pipeline)
+        throws ServiceException
+	{
+		// --- <<IS-START(invoke)>> ---
+		// @sigtype java 3.5
+		// [i] field:0:required service
+		// [i] field:0:required namespace
+		// [i] object:0:required withNewThread
+		// [i] object:0:required withPipeline
+		IDataCursor pipelineCursor = pipeline.getCursor();
+		String	service = IDataUtil.getString( pipelineCursor, "service" );
+		String	namespace = IDataUtil.getString( pipelineCursor, "namespace" );
+		Boolean	withPipeline = IDataUtil.getBoolean( pipelineCursor, "withPipeline", false );
+		Boolean	withNewThread = IDataUtil.getBoolean( pipelineCursor, "withNewThread", false );
+		pipelineCursor.destroy();
+		if (namespace == null) {
+			int colonPos = service.indexOf(':');
+			if (colonPos == -1) {
+				namespace = "";
+			} else {
+				namespace = service.substring(0, colonPos);
+				service = service.substring(colonPos + 1);
+			}
+		}
+		
+		checkServiceAvailable(namespace, service);
+		
+		try {
+			if (withNewThread) {
+				Service.doThreadInvoke(namespace, service, withPipeline?IDataUtil.deepClone(pipeline):IDataFactory.create());
+			} else {
+				Service.doInvoke(namespace, service, withPipeline?pipeline:IDataFactory.create());
+			}
+		} catch( Exception e){
+			throw new ServiceException(e);
+		} finally {
+			pipelineCursor.destroy();
+		}
+			
+		
+			
+		// --- <<IS-END>> ---
+
+                
+	}
+
+
+
+	public static final void restorePipelineFromIData (IData pipeline)
+        throws ServiceException
+	{
+		// --- <<IS-START(restorePipelineFromIData)>> ---
+		// @sigtype java 3.5
+		// [i] object:0:required pipelineXml
+		IDataCursor pipelineCursor = pipeline.getCursor();
+		Object pipelineXml = IDataUtil.get( pipelineCursor, "pipelineXml" );
+		InputStream is;
+		try {
+			if (pipelineXml instanceof Document) {
+				IDataUtil.merge(new IDataXMLCoder().decode((Document)pipelineXml), pipeline);
+			} else {
+				if (pipelineXml instanceof InputStream) {
+					is = (InputStream) pipelineXml;
+				} else if (pipelineXml instanceof String) {
+					is = new ByteArrayInputStream(((String)pipelineXml).getBytes());
+				} else {
+					throw new ServiceException("Unknown type " + pipelineXml.getClass());
+				}
+				if (is.available() > 0) {
+					XMLCoderWrapper xc = new XMLCoderWrapper();
+					IDataUtil.merge(xc.decode(is), pipeline);
+				}
+			}
+		} catch (IOException e) {
+			throw new ServiceException(e);
+		} finally {
+			pipelineCursor.destroy();
+		}		
+			
+		// --- <<IS-END>> ---
+
+                
+	}
+
+	// --- <<IS-START-SHARED>> ---
+	private static void checkServiceAvailable(String namespace, String service) throws ServiceException
+	{
+		try {
+			Namespace.current().getNode(namespace + ":" + service).getPackage().getName();
+		}
+		catch (Exception e) {
+			throw new ServiceException("Service could not be found: " + namespace + ":" + service);
+		}
+	}
+		
+	// --- <<IS-END-SHARED>> ---
+}
+

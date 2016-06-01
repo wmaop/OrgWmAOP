@@ -17,7 +17,7 @@
       <array name="rec_fields" type="record" depth="1">
         <record javaclass="com.wm.util.Values">
           <value name="node_type">record</value>
-          <value name="node_comment"></value>
+          <value name="node_comment">A unique id to register this assertion</value>
           <record name="node_hints" javaclass="com.wm.util.Values">
             <value name="field_usereditable">true</value>
             <value name="field_largerEditor">false</value>
