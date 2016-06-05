@@ -35,7 +35,7 @@
         </record>
         <record javaclass="com.wm.util.Values">
           <value name="node_type">record</value>
-          <value name="node_comment"></value>
+          <value name="node_comment">Service around which this assertion should prove interaction has occured</value>
           <record name="node_hints" javaclass="com.wm.util.Values">
             <value name="field_usereditable">true</value>
             <value name="field_largerEditor">false</value>
@@ -72,7 +72,7 @@
         </record>
         <record javaclass="com.wm.util.Values">
           <value name="node_type">record</value>
-          <value name="node_comment"></value>
+          <value name="node_comment">Should be before or after.  Using invoke would replace the service with this assertion, effectively making a null service.</value>
           <record name="node_hints" javaclass="com.wm.util.Values">
             <value name="field_usereditable">false</value>
             <value name="field_largerEditor">false</value>

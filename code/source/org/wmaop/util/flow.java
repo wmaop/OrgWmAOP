@@ -1,7 +1,7 @@
 package org.wmaop.util;
 
 // -----( IS Java Code Template v1.2
-// -----( CREATED: 2016-06-01 20:55:12 BST
+// -----( CREATED: 2016-06-05 07:54:55 BST
 // -----( ON-HOST: WSII
 
 import com.wm.data.*;
@@ -75,6 +75,56 @@ public final class flow
 			
 		
 			
+		// --- <<IS-END>> ---
+
+                
+	}
+
+
+
+	public static final void requestBodyToIData (IData pipeline)
+        throws ServiceException
+	{
+		// --- <<IS-START(requestBodyToIData)>> ---
+		// @sigtype java 3.5
+		// [i] object:0:required ffdata
+		// [i] object:0:required node
+		// [i] object:1:required contentStream
+		// [o] object:0:required body
+		IDataCursor pipelineCursor = pipeline.getCursor();
+		try {
+			Object ffdata = IDataUtil.get( pipelineCursor, "ffdata" );
+			Object node = IDataUtil.get( pipelineCursor, "node" );
+			Object contentStream = IDataUtil.get( pipelineCursor, "contentStream" );
+			
+			Object pipelineXml = ffdata != null ? ffdata : node != null ? node : contentStream;
+			if (pipelineXml != null) {
+				InputStream is;
+				if (pipelineXml instanceof Document) {
+					IData idata = new IDataXMLCoder().decode((Document)pipelineXml);
+					IDataUtil.put(pipelineCursor, "body", idata);
+				} else {
+					if (pipelineXml instanceof InputStream) {
+						is = (InputStream) pipelineXml;
+					} else if (pipelineXml instanceof String) {
+						is = new ByteArrayInputStream(((String)pipelineXml).getBytes());
+					} else if (pipelineXml instanceof byte[]) {
+						is = new ByteArrayInputStream((byte[])pipelineXml);
+					} else {
+						throw new ServiceException("Unknown type " + pipelineXml.getClass());
+					}
+					if (is.available() > 0) {
+						XMLCoderWrapper xc = new XMLCoderWrapper();
+						IData idata = xc.decode(is);
+						IDataUtil.put(pipelineCursor, "body", idata);
+					}
+				}
+			}
+		} catch (IOException e) {
+			throw new ServiceException(e);
+		} finally {
+			pipelineCursor.destroy();
+		}		
 		// --- <<IS-END>> ---
 
                 
