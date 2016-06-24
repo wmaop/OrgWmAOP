@@ -11,6 +11,7 @@
       <value name="is_public">false</value>
       <value name="field_type">record</value>
       <value name="field_dim">0</value>
+      <value name="wrapper_type">IData</value>
       <value name="nillable">true</value>
       <value name="form_qualified">false</value>
       <value name="is_global">false</value>
@@ -24,7 +25,7 @@
             <value name="field_password">false</value>
           </record>
           <value name="is_public">false</value>
-          <value name="field_name">id</value>
+          <value name="field_name">adviceId</value>
           <value name="field_type">string</value>
           <value name="field_dim">0</value>
           <array name="field_options" type="value" depth="1">
@@ -42,6 +43,7 @@
       <value name="is_public">false</value>
       <value name="field_type">record</value>
       <value name="field_dim">0</value>
+      <value name="wrapper_type">IData</value>
       <value name="nillable">true</value>
       <value name="form_qualified">false</value>
       <value name="is_global">false</value>
