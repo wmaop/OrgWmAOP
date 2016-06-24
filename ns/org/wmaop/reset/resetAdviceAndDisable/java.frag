@@ -3,5 +3,5 @@
 <Values version="2.0">
   <value name="name">resetAdviceAndDisable</value>
   <value name="encodeutf8">true</value>
-  <value name="body">bmV3IE1vY2tNYW5hZ2VyKCkucmVzZXQoKTs=</value>
+  <value name="body">bmV3IE1vY2tNYW5hZ2VyKCkucmVzZXQocGlwZWxpbmUpOw==</value>
 </Values>

@@ -1,8 +1,8 @@
 package org.wmaop;
 
 // -----( IS Java Code Template v1.2
-// -----( CREATED: 2016-05-29 11:12:46 BST
-// -----( ON-HOST: WSII
+// -----( CREATED: 2016-06-23 19:46:24 BST
+// -----( ON-HOST: Yoga.sysgen.co.uk
 
 import com.wm.data.*;
 import com.wm.util.Values;
@@ -34,7 +34,7 @@ public final class reset
 	{
 		// --- <<IS-START(resetAdviceAndDisable)>> ---
 		// @sigtype java 3.5
-		new MockManager().reset();
+		new MockManager().reset(pipeline);
 		// --- <<IS-END>> ---
 
                 
