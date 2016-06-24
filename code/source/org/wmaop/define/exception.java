@@ -1,7 +1,7 @@
 package org.wmaop.define;
 
 // -----( IS Java Code Template v1.2
-// -----( CREATED: 2016-05-27 08:27:34 BST
+// -----( CREATED: 2016-06-24 21:07:20 BST
 // -----( ON-HOST: WSII
 
 import com.wm.data.*;
@@ -33,6 +33,11 @@ public final class exception
 	{
 		// --- <<IS-START(registerExceptionMock)>> ---
 		// @sigtype java 3.5
+		// [i] field:0:required adviceId
+		// [i] field:0:required interceptPoint
+		// [i] field:0:required serviceName
+		// [i] field:0:required condition
+		// [i] field:0:required exception
 		new MockManager().registerException(pipeline);
 		// --- <<IS-END>> ---
 

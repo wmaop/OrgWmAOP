@@ -1,7 +1,7 @@
 package org.wmaop.define;
 
 // -----( IS Java Code Template v1.2
-// -----( CREATED: 2016-05-27 08:27:06 BST
+// -----( CREATED: 2016-06-24 21:05:03 BST
 // -----( ON-HOST: WSII
 
 import com.wm.data.*;
@@ -33,7 +33,8 @@ public final class assertion
 	{
 		// --- <<IS-START(getInvokeCount)>> ---
 		// @sigtype java 3.5
-		new MockManager().getInvokeCount(pipeline);		
+		// [i] field:0:required adviceId
+		new MockManager().getInvokeCount(pipeline);	
 			
 		// --- <<IS-END>> ---
 

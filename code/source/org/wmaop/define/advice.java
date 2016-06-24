@@ -1,7 +1,7 @@
 package org.wmaop.define;
 
 // -----( IS Java Code Template v1.2
-// -----( CREATED: 2016-05-27 08:25:50 BST
+// -----( CREATED: 2016-06-24 21:04:54 BST
 // -----( ON-HOST: WSII
 
 import com.wm.data.*;
@@ -34,7 +34,7 @@ public final class advice
 	{
 		// --- <<IS-START(getAdvice)>> ---
 		// @sigtype java 3.5
-		// [i] field:0:required id
+		// [i] field:0:required adviceId
 		new MockManager().getAdvice(pipeline);
 		// --- <<IS-END>> ---
 
@@ -48,7 +48,7 @@ public final class advice
 	{
 		// --- <<IS-START(removeAdvice)>> ---
 		// @sigtype java 3.5
-		// [i] field:0:required id
+		// [i] field:0:required adviceId
 		// pipeline
 		new MockManager().removeAdvice(pipeline);
 		// --- <<IS-END>> ---
