@@ -1,8 +1,8 @@
 package org.wmaop;
 
 // -----( IS Java Code Template v1.2
-// -----( CREATED: 2016-06-24 21:05:38 BST
-// -----( ON-HOST: WSII
+// -----( CREATED: 2016-06-29 07:53:33 BST
+// -----( ON-HOST: Yoga.sysgen.co.uk
 
 import com.wm.data.*;
 import com.wm.util.Values;
@@ -12,16 +12,16 @@ import com.wm.app.b2b.server.ServiceException;
 import org.wmaop.flow.MockManager;
 // --- <<IS-END-IMPORTS>> ---
 
-public final class enabled
+public final class state
 
 {
 	// ---( internal utility methods )---
 
-	final static enabled _instance = new enabled();
+	final static state _instance = new state();
 
-	static enabled _newInstance() { return new enabled(); }
+	static state _newInstance() { return new state(); }
 
-	static enabled _cast(Object o) { return (enabled)o; }
+	static state _cast(Object o) { return (state)o; }
 
 	// ---( server methods )---
 
