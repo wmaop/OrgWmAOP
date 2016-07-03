@@ -1,7 +1,7 @@
 package org.wmaop.define;
 
 // -----( IS Java Code Template v1.2
-// -----( CREATED: 2016-06-24 21:07:05 BST
+// -----( CREATED: 2016-07-03 20:13:00 BST
 // -----( ON-HOST: WSII
 
 import com.wm.data.*;
@@ -46,6 +46,7 @@ public final class scenario
 		// [i] object:0:required scenarioAsStream
 		// [i] field:0:required scenarioAsString
 		// [i] object:0:required scenarioAsDocument
+		// [i] field:0:required adviceId
 		new ScenarioManager().registerScenario(pipeline);
 		// --- <<IS-END>> ---
 
